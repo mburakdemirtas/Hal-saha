@@ -1,0 +1,122 @@
+body{
+  background-color:#9932CC;
+  font-family: 'Poppins', open-sans;}
+
+header{
+  display:flex;
+  flex-direction:column;
+  align-items:center;}
+
+h1{font-family: 'Anton', sans-serif;
+  font-size: 4em;
+  line-height:90%;
+  margin-top:30px;
+  margin:10px;
+  color:#FFFFFF;}
+
+.main{
+  margin:0 15% 0;
+  background-color:white;
+  padding:20px;
+  border-radius:5px;
+}
+
+header p{
+  font-size:1.5em;
+  color: whitesmoke;
+  margin-top:0px;
+}
+
+header input{
+  height:40px;
+  border:none;
+  width:75%;
+  margin:4px;
+  
+  }
+.error::placeholder {
+  color: red;
+}
+button{
+  background-color: thistle;
+  color: black;
+  border-radius: 8px;
+  border:none;
+  border-width:2px;
+  border-color: deepskyblue;
+  width:20%;
+}
+
+header form{
+  background-color:white;
+  border-radius: 3px;
+  padding:5px;
+  width:30%;
+  margin:20px 0;
+  display:flex;
+  justify-content:space-between;}
+
+ul{display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  padding:15px;
+  border-top:3px ridge gray;
+  border-bottom:3px ridge gray;
+  margin-top:10px; }
+
+li{list-style:none;
+  border:2px solid rebeccapurple;
+  box-shadow: 2px 2px 5px grey;
+  border-radius: 12px;
+  margin:2px;
+  flex-grow:1;
+  padding:1em;
+  height:100px;
+  margin-top: 20px;
+}
+
+li span{display:block;
+  font-size:1.8em;}
+
+li input[type=text]{
+  width: 5em;
+  font-size:1.75em;
+}
+
+li label{display:none;
+  color:slategray;
+  margin-top:5px;}
+
+.checked{display:none;}
+
+li button{
+  margin-right:5px;
+  width:80px;
+  height:30px;
+  margin-top: 15px;
+}
+
+.responded{
+  border:1px solid lightgrey;
+  box-shadow: 4px 4px 5px grey;}
+
+footer{text-align:center;
+  margin:15px;
+  color:white;}
+a {text-decoration:none;
+  color:white;}
+
+@media (max-width: 768px){
+  
+  header form{
+    flex-direction:column;
+    width:80%;}
+  header button, header input{width:auto;}
+  .main{margin:0 7% 0;}
+  h2{margin:0;}
+  .main>div{
+    margin:15px 0;
+    font-size:.8em;}
+  li input[type=text]{
+    font-size:1.65em;}
+}
